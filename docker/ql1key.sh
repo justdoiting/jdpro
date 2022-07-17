@@ -2,7 +2,7 @@
 #2.11.3版本青龙一键安装并添加拉库任务
 #部署路径在/root/ql目录，容器名qinglong
 #端口5500
-#modify 2022-6-9
+#modify 2022-7-17
 
 Green="\033[32;1m"
 Red="\033[31m"
@@ -46,7 +46,7 @@ cat > docker-compose.yml <<EOF
 version: '2'
 services:
   qinglong:
-    image: whyour/qinglong:2.11.3
+    image: whyour/qinglong:2.13.4
     container_name: qinglong
     volumes:
       - ./data/config:/ql/config
