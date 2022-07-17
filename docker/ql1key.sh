@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #2.13.4版本青龙一键安装并添加拉库任务
-#部署路径在/root/ql目录，容器名qinglong
+#部署路径在/root/ql目录，容器名xiaoqinglong
 #端口5600
 #modify 2022-7-17
 
@@ -40,7 +40,7 @@ fi
 mkdir -p /root/ql && ql_path=/root/ql
 
 ql_run() {
-if [  -z "$(docker ps -a | grep qinglong  2> /dev/null)" ]; then
+if [  -z "$(docker ps -a | grep xiaoqinglong  2> /dev/null)" ]; then
 cd $ql_path
 cat > docker-compose.yml <<EOF
 version: '2'
