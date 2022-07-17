@@ -1,7 +1,7 @@
 version: '2'
 services:
   ql_web:
-    image: whyour/qinglong:2.11.3
+    image: whyour/qinglong:2.13.4
     container_name: ql
     volumes:
       - ./data/config:/ql/config
@@ -10,7 +10,7 @@ services:
       - ./data/scripts:/ql/scripts
       - ./data/repo:/ql/repo
     ports:
-      - "0.0.0.0:5700:5700"
+      - "0.0.0.0:5600:5700"
     environment:
       - ENABLE_HANGUP=true
       - ENABLE_WEB_PANEL=true
